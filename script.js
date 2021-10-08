@@ -8,6 +8,7 @@ function httpGet(theUrl)
 function update()
 {
 	var chatLog = httpGet('greebo:9999/chatlog.json');
+	alert(chatLog)
 	var length = parseInt(chatLog["length"]);
 	var out = "";
 	var fromMessage = "";
