@@ -7,7 +7,7 @@ function httpGet(theUrl)
 }
 function update()
 {
-	var chatLog = httpGet('10.16.188.50/chatlog.json');
+	var chatLog = httpGet('192.168.23.1:9999/chatlog.json');
 	alert(chatLog)
 	var length = parseInt(chatLog["length"]);
 	var out = "";
